@@ -53,7 +53,7 @@ const data = db.prepare(`with matches as (
     embedding,
     ?
   )
-  limit 20
+  limit 10
 )
 select
   articles.rowid,

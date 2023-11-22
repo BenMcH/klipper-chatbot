@@ -4,7 +4,7 @@ This repo is an attempt at combining the OpenAI APIs with a custom data store, t
 
 Each time the `query.mjs` file is run, the virtual table created with `sqlite-vss` is dropped and then recreated such that any new embeddings are automatically picked up but that we don't encounter duplicates when providing information to the GPT apis.
 
-Example chat:
+## Example chat:
 
 ```
 ➜  klipper-chat git:(main) ✗ node query.mjs 

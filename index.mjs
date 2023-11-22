@@ -38,6 +38,8 @@ const text = fs.readFileSync('./Config_Reference.md').toString()
 const sections = await markdownToSections(text)
 
 for (let text of sections) {
+	if (!text.trim().includes('\n')) continue // Don't embed or insert. This indicates that only the header values are present, no real information
+
 	const embeddings = await embed(text)
 
 	const stmt = db.prepare(`INSERT INTO ARTICLES(content, embedding) VALUES (?, ?)`)

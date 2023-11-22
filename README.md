@@ -24,3 +24,5 @@ To add a BLTouch to your printer, you need to follow these steps:
 
 Make sure to refer to the [BL-Touch guide](BLTouch.md) and the [command reference](G-Codes.md#bltouch) for detailed information on configuring and using the BLTouch probe with Klipper.
 ```
+
+*Note: This chat is not meant to be fully accurate and still has the capability of hallucination. This repo's purpose is simply to provide myself a playground to test out sqlite-vss and retrieval augmented generation (RAG).*
